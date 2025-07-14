@@ -10,85 +10,52 @@ const Projects = () => {
     triggerOnce: true,
   })
 
-  // Mock GitHub repositories data
+  // Projects based on resume
   const projects = [
     {
       id: 1,
-      name: "AI-Powered Web Analytics",
-      description: "A full-stack analytics platform that uses machine learning to provide intelligent insights on web traffic patterns and user behavior.",
-      technologies: ["React", "Python", "TensorFlow", "Node.js", "MongoDB"],
-      stars: 124,
-      forks: 32,
-      language: "TypeScript",
-      updated_at: "2024-01-15",
-      html_url: "https://github.com/saivamsi4514/ai-web-analytics",
-      homepage: "https://ai-analytics-demo.vercel.app",
-      featured: true
+      name: "Automated Detection of Structural Anomalies Using Object Tracking Techniques",
+      description: "Research Project Lead - Developed an automated system for early detection of structural anomalies using advanced image segmentation techniques. Implemented YOLO model for object detection, tracking, and segmentation of cracks, potholes, and corrosion. Analyzed real-time data and optimized performance for identifying critical structural defects in urban infrastructure.",
+      technologies: ["Python", "YOLO", "Computer Vision", "Object Detection", "Image Segmentation"],
+      stars: 0,
+      forks: 0,
+      language: "Python",
+      updated_at: "2024-12-01",
+      html_url: "https://github.com/saivamsi4514/structural-anomaly-detection",
+      homepage: null,
+      featured: true,
+      date: "2024",
+      role: "Research Project Lead"
     },
     {
       id: 2,
-      name: "SDN Security Framework",
-      description: "An advanced Software-Defined Networking security framework with real-time threat detection and automated response mechanisms.",
-      technologies: ["Python", "OpenFlow", "Docker", "Kubernetes", "React"],
-      stars: 89,
-      forks: 21,
+      name: "Diabetes Prediction System",
+      description: "Project Lead - Developed an integrated ensemble model (XNN + LGBM) for diabetes prediction. Built backend powered by Flask API with HTML, CSS, and PHP frontend. Created a comprehensive dashboard for health metrics visualization and personalized health recommendations.",
+      technologies: ["Python", "XNN", "LGBM", "Flask", "HTML", "CSS", "PHP"],
+      stars: 0,
+      forks: 0,
       language: "Python",
-      updated_at: "2024-01-10",
-      html_url: "https://github.com/saivamsi4514/sdn-security",
+      updated_at: "2024-05-01",
+      html_url: "https://github.com/saivamsi4514/diabetes-prediction",
       homepage: null,
-      featured: true
+      featured: true,
+      date: "Feb 2024 - May 2024",
+      role: "Project Lead"
     },
     {
       id: 3,
-      name: "Real-time Chat Application",
-      description: "A scalable real-time messaging platform with end-to-end encryption, file sharing, and AI-powered moderation.",
-      technologies: ["React", "Socket.io", "Node.js", "Redis", "PostgreSQL"],
-      stars: 67,
-      forks: 18,
-      language: "JavaScript",
-      updated_at: "2024-01-08",
-      html_url: "https://github.com/saivamsi4514/realtime-chat",
-      homepage: "https://chat-app-demo.netlify.app",
-      featured: true
-    },
-    {
-      id: 4,
-      name: "ML Model Deployment API",
-      description: "A containerized API service for deploying and managing machine learning models with auto-scaling capabilities.",
-      technologies: ["FastAPI", "Docker", "MLflow", "Kubernetes", "AWS"],
-      stars: 45,
-      forks: 12,
+      name: "Amazon Sales Data Analysis",
+      description: "Comprehensive analysis of Amazon sales data including units sold and revenue generated. Performed actionable analysis for market information, product details in categories, and preview feedbacks to derive business insights.",
+      technologies: ["Python", "Pandas", "Data Analysis", "Market Research"],
+      stars: 0,
+      forks: 0,
       language: "Python",
-      updated_at: "2024-01-05",
-      html_url: "https://github.com/saivamsi4514/ml-deployment-api",
+      updated_at: "2024-04-01",
+      html_url: "https://github.com/saivamsi4514/amazon-sales-analysis",
       homepage: null,
-      featured: false
-    },
-    {
-      id: 5,
-      name: "Blockchain Voting System",
-      description: "A secure, transparent voting system built on blockchain technology with smart contract integration.",
-      technologies: ["Solidity", "React", "Web3.js", "Truffle", "IPFS"],
-      stars: 78,
-      forks: 25,
-      language: "Solidity",
-      updated_at: "2024-01-03",
-      html_url: "https://github.com/saivamsi4514/blockchain-voting",
-      homepage: "https://voting-dapp.vercel.app",
-      featured: false
-    },
-    {
-      id: 6,
-      name: "Cybersecurity Dashboard",
-      description: "A comprehensive security monitoring dashboard with threat intelligence and incident response automation.",
-      technologies: ["Vue.js", "Python", "Elasticsearch", "Kibana", "Docker"],
-      stars: 56,
-      forks: 15,
-      language: "Vue",
-      updated_at: "2024-01-01",
-      html_url: "https://github.com/saivamsi4514/security-dashboard",
-      homepage: null,
-      featured: false
+      featured: false,
+      date: "April 2024",
+      role: "Data Analyst"
     }
   ]
 

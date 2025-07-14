@@ -12,51 +12,27 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      type: "Full-time",
-      startDate: "2023-06",
-      endDate: "Present",
-      description: "Led development of AI-powered web applications, architected microservices infrastructure, and implemented real-time data processing systems. Reduced system response time by 40% and increased user engagement by 60%.",
-      technologies: ["React", "Node.js", "Python", "AWS", "Docker", "Kubernetes", "TensorFlow"],
-      website: "https://techcorp.com"
+      title: "Intern",
+      company: "IIT Warangal",
+      location: "Warangal, India",
+      type: "Internship",
+      startDate: "2024-12",
+      endDate: "2025-04",
+      description: "LDoS Attack Detection and Mitigation Using Deep Learning in SDN - Implementation of deep learning models to detect and mitigate low-rate DDoS attacks in Software-Defined Networks. Used tools including Python, TensorFlow/Keras, and SDN frameworks.",
+      technologies: ["Python", "TensorFlow", "Keras", "SDN", "Deep Learning", "Network Security"],
+      website: "https://www.iitwarangal.ac.in"
     },
     {
       id: 2,
-      title: "Software Engineer - AI/ML",
-      company: "DataMind Inc.",
-      location: "New York, NY",
-      type: "Full-time",
-      startDate: "2022-03",
-      endDate: "2023-05",
-      description: "Developed machine learning models for predictive analytics, created REST APIs for model deployment, and built interactive dashboards for data visualization. Improved model accuracy by 25% and reduced inference time by 50%.",
-      technologies: ["Python", "TensorFlow", "PyTorch", "Flask", "React", "PostgreSQL", "Redis"],
-      website: "https://datamind.com"
-    },
-    {
-      id: 3,
-      title: "Cybersecurity Analyst",
-      company: "SecureNet Systems",
-      location: "Austin, TX",
-      type: "Full-time",
-      startDate: "2021-08",
-      endDate: "2022-02",
-      description: "Implemented SDN-based security solutions, performed vulnerability assessments, and developed automated threat detection systems. Reduced security incidents by 70% and improved network monitoring efficiency.",
-      technologies: ["Python", "OpenFlow", "Wireshark", "Splunk", "Linux", "Docker", "Ansible"],
-      website: "https://securenet.com"
-    },
-    {
-      id: 4,
-      title: "Junior Web Developer",
-      company: "StartupHub",
-      location: "Remote",
-      type: "Contract",
-      startDate: "2021-01",
-      endDate: "2021-07",
-      description: "Built responsive web applications, optimized database queries, and collaborated with design teams to implement user interfaces. Delivered 15+ projects on time and improved website performance by 35%.",
-      technologies: ["JavaScript", "React", "Node.js", "MongoDB", "Express", "HTML", "CSS"],
-      website: "https://startuphub.com"
+      title: "Intern",
+      company: "VIJERAIT Automation Private Limited",
+      location: "India",
+      type: "Internship",
+      startDate: "2023-07",
+      endDate: "2023-08",
+      description: "4G GPS ASSET TRACKER WEBSITE - Developed a website for a tracker and performed comprehensive website and server testing. Applied expertise in Web Development, Web Design, Data Analytics, and Testing methodologies.",
+      technologies: ["Web Development", "Web Design", "Data Analytics", "Testing", "GPS Tracking"],
+      website: "https://vijerait.com"
     }
   ]
 

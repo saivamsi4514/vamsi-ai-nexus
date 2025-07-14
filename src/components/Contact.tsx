@@ -65,20 +65,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "sai.vamsi.cheekati@gmail.com",
-      href: "mailto:sai.vamsi.cheekati@gmail.com"
+      value: "saivamsicheekati@gmail.com",
+      href: "mailto:saivamsicheekati@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 70378 74 78",
+      href: "tel:+917037874778"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
-      href: "https://maps.google.com/?q=San+Francisco,CA"
+      value: "Vizianagaram, India",
+      href: "https://maps.google.com/?q=Vizianagaram,India"
     }
   ]
 
@@ -94,18 +94,6 @@ const Contact = () => {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/sai-vamsi-ch/",
       color: "hover:text-blue-600"
-    },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      href: "https://twitter.com/saivamsi_ch",
-      color: "hover:text-blue-400"
-    },
-    {
-      icon: MessageSquare,
-      label: "Discord",
-      href: "https://discord.com/users/saivamsi#1234",
-      color: "hover:text-indigo-500"
     }
   ]
 
@@ -208,14 +196,14 @@ const Contact = () => {
               </div>
 
               {/* Availability */}
-              <div className="p-6 bg-card rounded-lg border">
+                <div className="p-6 bg-card rounded-lg border">
                 <h4 className="font-semibold mb-2 flex items-center">
                   <div className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse" />
-                  Currently Available
+                  Final Year Student
                 </h4>
                 <p className="text-sm text-muted-foreground">
-                  Open to full-time opportunities, freelance projects, and consulting work. 
-                  Average response time: 24 hours.
+                  Open to internships, entry-level opportunities, and project collaborations. 
+                  Graduating in 2025 from GMR Institute of Technology.
                 </p>
               </div>
             </motion.div>
@@ -307,10 +295,10 @@ const Contact = () => {
                   <p className="text-sm text-muted-foreground">
                     Prefer email? Drop me a line at{' '}
                     <a 
-                      href="mailto:sai.vamsi.cheekati@gmail.com" 
+                      href="mailto:saivamsicheekati@gmail.com" 
                       className="text-primary hover:underline"
                     >
-                      sai.vamsi.cheekati@gmail.com
+                      saivamsicheekati@gmail.com
                     </a>
                   </p>
                 </div>

@@ -12,52 +12,73 @@ const Education = () => {
   const education = [
     {
       id: 1,
-      degree: "Master of Science in Computer Science",
-      specialization: "Artificial Intelligence & Machine Learning",
-      institution: "Stanford University",
-      location: "Stanford, CA",
-      startDate: "2019-09",
-      endDate: "2021-06",
-      gpa: "3.89/4.0",
+      degree: "B.Tech in Computer Science - Artificial Intelligence and Data Science",
+      specialization: "Artificial Intelligence and Data Science",
+      institution: "GMR Institute of Technology Srikakulam",
+      location: "Srikakulam, India",
+      startDate: "2021-07",
+      endDate: "2025-06",
+      gpa: "8.5/10.0",
       achievements: [
-        "Dean's List for 4 consecutive semesters",
-        "Outstanding Graduate Student Award",
-        "Research Assistant in AI/ML Lab"
+        "Current GPA: 8.5/10.0",
+        "Research Project Lead in Structural Anomaly Detection",
+        "Active participant in technical projects and internships"
       ],
       coursework: [
         "Machine Learning",
-        "Deep Learning",
+        "Data Science",
         "Computer Vision",
-        "Natural Language Processing",
-        "Distributed Systems",
-        "Advanced Algorithms"
+        "Software Engineering",
+        "Database Management",
+        "Algorithms"
       ],
-      thesis: "Adversarial Machine Learning in Cybersecurity Applications"
+      thesis: "Automated Detection of Structural Anomalies Using Object Tracking Techniques"
     },
     {
       id: 2,
-      degree: "Bachelor of Technology in Computer Science",
-      specialization: "Software Engineering",
-      institution: "Indian Institute of Technology (IIT)",
-      location: "Mumbai, India",
-      startDate: "2015-08",
-      endDate: "2019-05",
-      gpa: "8.9/10.0",
+      degree: "Class XII - High School Certification",
+      specialization: "Science Stream",
+      institution: "Andhra Pradesh Board",
+      location: "Andhra Pradesh, India",
+      startDate: "2019-06",
+      endDate: "2020-05",
+      gpa: "92.6%",
       achievements: [
-        "Graduated Magna Cum Laude",
-        "IEEE Student Chapter President",
-        "Winner of National Coding Competition 2018",
-        "Best Capstone Project Award"
+        "Scored 92.6% in Class XII",
+        "Merit student in Science stream",
+        "Strong foundation in Mathematics and Physics"
       ],
       coursework: [
-        "Data Structures & Algorithms",
-        "Database Management Systems",
-        "Computer Networks",
-        "Software Engineering",
-        "Operating Systems",
-        "Web Technologies"
+        "Physics",
+        "Chemistry",
+        "Mathematics",
+        "Computer Science",
+        "English"
       ],
-      thesis: "Software-Defined Networking for Enhanced Network Security"
+      thesis: null
+    },
+    {
+      id: 3,
+      degree: "Class X - Secondary School Certification",
+      specialization: "All Subjects",
+      institution: "CBSE Board",
+      location: "India",
+      startDate: "2017-04",
+      endDate: "2018-05",
+      gpa: "90.6%",
+      achievements: [
+        "Scored 90.6% in Class X",
+        "All-round excellence in academics",
+        "Strong performance in Mathematics and Science"
+      ],
+      coursework: [
+        "Mathematics",
+        "Science",
+        "Social Studies",
+        "English",
+        "Hindi"
+      ],
+      thesis: null
     }
   ]
 
@@ -174,10 +195,12 @@ const Education = () => {
                       </div>
 
                       {/* Thesis */}
-                      <div className="mb-4">
-                        <h5 className="font-semibold mb-2">Thesis:</h5>
-                        <p className="text-muted-foreground italic">{edu.thesis}</p>
-                      </div>
+                      {edu.thesis && (
+                        <div className="mb-4">
+                          <h5 className="font-semibold mb-2">Thesis:</h5>
+                          <p className="text-muted-foreground italic">{edu.thesis}</p>
+                        </div>
+                      )}
 
                       {/* Achievements */}
                       <div className="mb-4">

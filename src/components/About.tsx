@@ -10,40 +10,34 @@ const About = () => {
 
   const skills = [
     {
-      category: "Frontend Development",
+      category: "Programming Languages",
       icon: Code,
-      technologies: ["React", "TypeScript", "Next.js", "Vue.js", "TailwindCSS", "Framer Motion"],
+      technologies: ["C", "Python", "Java", "SQL", "Swift"],
       color: "from-blue-500 to-cyan-500"
     },
     {
-      category: "Backend & APIs",
+      category: "Web Development",
       icon: Server,
-      technologies: ["Node.js", "Python", "Express", "FastAPI", "GraphQL", "REST APIs"],
+      technologies: ["HTML", "CSS", "JavaScript", "Flask", "PHP", "Node.js"],
       color: "from-green-500 to-emerald-500"
     },
     {
-      category: "AI & Machine Learning",
+      category: "Data Analysis & ML",
       icon: Brain,
-      technologies: ["TensorFlow", "PyTorch", "Scikit-learn", "OpenAI API", "Computer Vision", "NLP"],
+      technologies: ["NumPy", "Pandas", "Seaborn", "Scikit-learn", "TensorFlow", "Keras", "PyTorch", "SciPy"],
       color: "from-purple-500 to-pink-500"
     },
     {
-      category: "Database & Cloud",
-      icon: Database,
-      technologies: ["MongoDB", "PostgreSQL", "Redis", "AWS", "Docker", "Kubernetes"],
+      category: "Testing Tools",
+      icon: Shield,
+      technologies: ["JMeter", "Postman"],
       color: "from-orange-500 to-red-500"
     },
     {
-      category: "Cybersecurity & SDN",
-      icon: Shield,
-      technologies: ["Network Security", "SDN Controllers", "Penetration Testing", "SIEM", "Firewall Management"],
-      color: "from-indigo-500 to-purple-500"
-    },
-    {
-      category: "Real-time Systems",
+      category: "Project Management",
       icon: Zap,
-      technologies: ["WebSocket", "Socket.io", "Message Queues", "Event Streaming", "Microservices"],
-      color: "from-yellow-500 to-orange-500"
+      technologies: ["Agile Methodologies"],
+      color: "from-indigo-500 to-purple-500"
     }
   ]
 
@@ -100,33 +94,33 @@ const About = () => {
 
             {/* About Content */}
             <motion.div variants={itemVariants} className="space-y-6">
-              <h3 className="text-2xl font-bold">Full-Stack Engineer & AI Enthusiast</h3>
+              <h3 className="text-2xl font-bold">B.Tech Student & AI Research Enthusiast</h3>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                I'm a passionate full-stack developer with a deep interest in artificial intelligence, 
-                cybersecurity, and real-time systems. With expertise spanning from frontend development 
-                to complex backend architectures, I specialize in creating scalable, secure, and 
-                intelligent applications.
+                Motivated and adaptable engineering student with a strong foundation in core 
+                engineering principles, analytical skills, and problem-solving ability. Proficient in applying 
+                theoretical knowledge to practical challenges and eager to tackle hands-on experience in 
+                dynamic work environments.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                My journey in technology has led me to work on diverse projects ranging from 
-                SDN-based network security solutions to AI-powered web applications. I believe 
-                in the power of technology to solve real-world problems and am constantly 
-                exploring new ways to integrate AI and machine learning into practical solutions.
+                Committed to accessing best practices, embracing continuous learning to deliver 
+                impactful results through collaboration, data-driven insights, and technical expertise. 
+                Currently pursuing B.Tech in Computer Science - Artificial Intelligence and Data Science 
+                at GMR Institute of Technology.
               </p>
               
-              {/* Quick Stats */}
+               {/* Quick Stats */}
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-6">
                 <div className="text-center p-4 bg-card rounded-lg border">
+                  <div className="text-2xl font-bold text-primary">8.5</div>
+                  <div className="text-sm text-muted-foreground">Current GPA</div>
+                </div>
+                <div className="text-center p-4 bg-card rounded-lg border">
                   <div className="text-2xl font-bold text-primary">3+</div>
-                  <div className="text-sm text-muted-foreground">Years Experience</div>
+                  <div className="text-sm text-muted-foreground">Major Projects</div>
                 </div>
                 <div className="text-center p-4 bg-card rounded-lg border">
-                  <div className="text-2xl font-bold text-primary">50+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
-                </div>
-                <div className="text-center p-4 bg-card rounded-lg border">
-                  <div className="text-2xl font-bold text-primary">20+</div>
-                  <div className="text-sm text-muted-foreground">Technologies</div>
+                  <div className="text-2xl font-bold text-primary">2</div>
+                  <div className="text-sm text-muted-foreground">Internships</div>
                 </div>
               </div>
             </motion.div>

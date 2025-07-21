@@ -37,15 +37,15 @@ const Education = () => {
     {
       id: 2,
       degree: "Class XII - High School Certification",
-      specialization: "Science Stream",
+      specialization: "Narayana Junior College",
       institution: "Andhra Pradesh Board",
       location: "Andhra Pradesh, India",
       startDate: "2019-06",
       endDate: "2020-05",
-      gpa: "92.6%",
+      gpa: "8.38 GPA",
       achievements: [
-        "Scored 92.6% in Class XII",
-        "Merit student in Science stream",
+        "Scored 8.38 GPA in Class XII",
+        "Merit student at Narayana Junior College",
         "Strong foundation in Mathematics and Physics"
       ],
       coursework: [
@@ -60,14 +60,14 @@ const Education = () => {
     {
       id: 3,
       degree: "Class X - Secondary School Certification",
-      specialization: "All Subjects",
+      specialization: "MPEV School",
       institution: "CBSE Board",
       location: "India",
       startDate: "2017-04",
       endDate: "2018-05",
-      gpa: "90.6%",
+      gpa: "8.0 CGPA",
       achievements: [
-        "Scored 90.6% in Class X",
+        "Scored 8.0 CGPA in Class X",
         "All-round excellence in academics",
         "Strong performance in Mathematics and Science"
       ],

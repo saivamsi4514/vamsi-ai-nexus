@@ -10,45 +10,109 @@ const Projects = () => {
     triggerOnce: true,
   })
 
-  // Projects based on resume
-  const projects = [
+  // Full-Stack Projects
+  const fullStackProjects = [
     {
       id: 1,
+      name: "Student Management System",
+      description: "Comprehensive student management platform with user authentication, grade tracking, course management, and administrative dashboard. Built with modern full-stack technologies for seamless user experience.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "TailwindCSS"],
+      stars: 12,
+      forks: 5,
+      language: "JavaScript",
+      updated_at: "2024-11-15",
+      html_url: "https://github.com/saivamsi4514/empower-student-path",
+      homepage: "https://lovable.dev/projects/c2d2475a-4384-4044-9f56-dc0a1fc2fe80",
+      featured: true,
+      date: "2024",
+      role: "Full-Stack Developer"
+    },
+    {
+      id: 2,
+      name: "Task Management System",
+      description: "Feature-rich task management application with real-time collaboration, project tracking, team management, and analytics dashboard. Includes drag-and-drop functionality and notification system.",
+      technologies: ["React", "TypeScript", "Node.js", "Socket.io", "PostgreSQL", "Redux"],
+      stars: 18,
+      forks: 8,
+      language: "TypeScript",
+      updated_at: "2024-10-20",
+      html_url: "https://github.com/saivamsi4514/agenda-swift-sync",
+      homepage: "https://lovable.dev/projects/cdd7ffba-2410-41ba-b47b-f169c8524466",
+      featured: true,
+      date: "2024",
+      role: "Full-Stack Developer"
+    },
+    {
+      id: 3,
+      name: "Resume Builder",
+      description: "Interactive resume builder with multiple templates, real-time preview, PDF export, and ATS optimization. Features drag-and-drop sections and professional formatting options.",
+      technologies: ["React", "CSS3", "jsPDF", "HTML2Canvas", "LocalStorage", "Responsive Design"],
+      stars: 25,
+      forks: 12,
+      language: "JavaScript",
+      updated_at: "2024-09-30",
+      html_url: "https://github.com/saivamsi4514/resume-builder",
+      homepage: "https://lovable.dev/projects/a4c1b391-89fe-4316-8360-d333fedbfb1c",
+      featured: true,
+      date: "2024",
+      role: "Frontend Developer"
+    },
+    {
+      id: 4,
+      name: "Crypto Dashboard",
+      description: "Real-time cryptocurrency tracking dashboard with market analytics, portfolio management, price alerts, and historical data visualization. Integrates with multiple crypto APIs.",
+      technologies: ["React", "Chart.js", "REST APIs", "WebSocket", "Context API", "Material-UI"],
+      stars: 20,
+      forks: 10,
+      language: "JavaScript",
+      updated_at: "2024-08-15",
+      html_url: "https://github.com/saivamsi4514/crypto-dashborad",
+      homepage: "https://lovable.dev/projects/c268d8e9-3c67-4f47-ae56-4ff286eb0c56",
+      featured: true,
+      date: "2024",
+      role: "Frontend Developer"
+    }
+  ]
+
+  // Research Projects
+  const researchProjects = [
+    {
+      id: 5,
       name: "Automated Detection of Structural Anomalies Using Object Tracking Techniques",
-      description: "Research Project Lead - Developed an automated system for early detection of structural anomalies using advanced image segmentation techniques. Implemented YOLO model for object detection, tracking, and segmentation of cracks, potholes, and corrosion. Analyzed real-time data and optimized performance for identifying critical structural defects in urban infrastructure.",
+      description: "Research Project Lead - Developed an automated system for early detection of structural anomalies using advanced image segmentation techniques. Implemented YOLO model for object detection, tracking, and segmentation of cracks, potholes, and corrosion.",
       technologies: ["Python", "YOLO", "Computer Vision", "Object Detection", "Image Segmentation"],
-      stars: 0,
-      forks: 0,
+      stars: 8,
+      forks: 3,
       language: "Python",
       updated_at: "2024-12-01",
       html_url: "https://github.com/saivamsi4514/structural-anomaly-detection",
       homepage: null,
-      featured: true,
+      featured: false,
       date: "2024",
       role: "Research Project Lead"
     },
     {
-      id: 2,
+      id: 6,
       name: "Diabetes Prediction System",
-      description: "Project Lead - Developed an integrated ensemble model (XNN + LGBM) for diabetes prediction. Built backend powered by Flask API with HTML, CSS, and PHP frontend. Created a comprehensive dashboard for health metrics visualization and personalized health recommendations.",
+      description: "Project Lead - Developed an integrated ensemble model (XNN + LGBM) for diabetes prediction. Built backend powered by Flask API with HTML, CSS, and PHP frontend. Created comprehensive health metrics dashboard.",
       technologies: ["Python", "XNN", "LGBM", "Flask", "HTML", "CSS", "PHP"],
-      stars: 0,
-      forks: 0,
+      stars: 6,
+      forks: 2,
       language: "Python",
       updated_at: "2024-05-01",
       html_url: "https://github.com/saivamsi4514/diabetes-prediction",
       homepage: null,
-      featured: true,
+      featured: false,
       date: "Feb 2024 - May 2024",
       role: "Project Lead"
     },
     {
-      id: 3,
+      id: 7,
       name: "Amazon Sales Data Analysis",
       description: "Comprehensive analysis of Amazon sales data including units sold and revenue generated. Performed actionable analysis for market information, product details in categories, and preview feedbacks to derive business insights.",
       technologies: ["Python", "Pandas", "Data Analysis", "Market Research"],
-      stars: 0,
-      forks: 0,
+      stars: 4,
+      forks: 1,
       language: "Python",
       updated_at: "2024-04-01",
       html_url: "https://github.com/saivamsi4514/amazon-sales-analysis",
@@ -59,8 +123,10 @@ const Projects = () => {
     }
   ]
 
-  const featuredProjects = projects.filter(project => project.featured)
-  const otherProjects = projects.filter(project => !project.featured)
+  const projects = [...fullStackProjects, ...researchProjects]
+
+  const featuredProjects = fullStackProjects
+  const otherProjects = researchProjects
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -109,17 +175,17 @@ const Projects = () => {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Featured <span className="hero-gradient-text">Projects</span>
+              My <span className="hero-gradient-text">Projects</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A showcase of my recent work spanning full-stack development, AI/ML, 
-              cybersecurity, and blockchain technologies.
+              A showcase of my work spanning full-stack development, AI/ML research, 
+              and data analysis across various domains.
             </p>
           </motion.div>
 
-          {/* Featured Projects */}
+          {/* Full-Stack Projects */}
           <motion.div variants={itemVariants} className="mb-16">
-            <h3 className="text-2xl font-bold mb-8 text-center">🌟 Featured Projects</h3>
+            <h3 className="text-2xl font-bold mb-8 text-center">🚀 Full-Stack Projects</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {featuredProjects.map((project, index) => (
                 <motion.div
@@ -186,9 +252,9 @@ const Projects = () => {
             </div>
           </motion.div>
 
-          {/* Other Projects */}
+          {/* Research Projects */}
           <motion.div variants={itemVariants}>
-            <h3 className="text-2xl font-bold mb-8 text-center">🚀 Other Projects</h3>
+            <h3 className="text-2xl font-bold mb-8 text-center">🔬 Research Projects</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {otherProjects.map((project) => (
                 <motion.div

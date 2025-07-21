@@ -77,23 +77,9 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Profile Image */}
-            <motion.div variants={itemVariants} className="relative">
-              <div className="relative mx-auto lg:mx-0 w-80 h-80">
-                <div className="absolute inset-0 bg-gradient-primary rounded-2xl transform rotate-6"></div>
-                <div className="relative bg-white rounded-2xl overflow-hidden transform -rotate-6 hover:rotate-0 transition-transform duration-300">
-                  <img
-                    src="/lovable-uploads/f9093db6-53ed-4cc3-907c-e5aa214db6a8.png"
-                    alt="Sai Vamsi Cheekati"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            </motion.div>
-
+          <div className="max-w-4xl mx-auto">
             {/* About Content */}
-            <motion.div variants={itemVariants} className="space-y-6">
+            <motion.div variants={itemVariants} className="space-y-6 text-center">
               <h3 className="text-2xl font-bold">B.Tech Student & AI Research Enthusiast</h3>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 Motivated and adaptable engineering student with a strong foundation in core 
@@ -115,7 +101,7 @@ const About = () => {
                   <div className="text-sm text-muted-foreground">Current GPA</div>
                 </div>
                 <div className="text-center p-4 bg-card rounded-lg border">
-                  <div className="text-2xl font-bold text-primary">3+</div>
+                  <div className="text-2xl font-bold text-primary">7+</div>
                   <div className="text-sm text-muted-foreground">Major Projects</div>
                 </div>
                 <div className="text-center p-4 bg-card rounded-lg border">

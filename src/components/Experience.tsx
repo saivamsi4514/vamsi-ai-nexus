@@ -13,26 +13,26 @@ const Experience = () => {
     {
       id: 1,
       title: "Intern",
-      company: "IIT Warangal",
+      company: "NIT Warangal",
       location: "Warangal, India",
       type: "Internship",
       startDate: "2024-12",
       endDate: "2025-04",
       description: "LDoS Attack Detection and Mitigation Using Deep Learning in SDN - Implementation of deep learning models to detect and mitigate low-rate DDoS attacks in Software-Defined Networks. Used tools including Python, TensorFlow/Keras, and SDN frameworks.",
       technologies: ["Python", "TensorFlow", "Keras", "SDN", "Deep Learning", "Network Security"],
-      website: "https://www.iitwarangal.ac.in"
+      website: "https://www.nitw.ac.in"
     },
     {
       id: 2,
       title: "Intern",
-      company: "VIJERAIT Automation Private Limited",
+      company: "WISENET Automation Private Limited",
       location: "India",
       type: "Internship",
       startDate: "2023-07",
       endDate: "2023-08",
       description: "4G GPS ASSET TRACKER WEBSITE - Developed a website for a tracker and performed comprehensive website and server testing. Applied expertise in Web Development, Web Design, Data Analytics, and Testing methodologies.",
       technologies: ["Web Development", "Web Design", "Data Analytics", "Testing", "GPS Tracking"],
-      website: "https://vijerait.com"
+      website: "https://wisenet.com"
     }
   ]
 

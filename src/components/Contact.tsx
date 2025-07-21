@@ -71,8 +71,8 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 70378 74 78",
-      href: "tel:+917037874778"
+      value: "+91 7093798378",
+      href: "tel:+917093798378"
     },
     {
       icon: MapPin,
@@ -199,7 +199,7 @@ const Contact = () => {
                 <div className="p-6 bg-card rounded-lg border">
                 <h4 className="font-semibold mb-2 flex items-center">
                   <div className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse" />
-                  Final Year Student
+                  Available for Opportunities
                 </h4>
                 <p className="text-sm text-muted-foreground">
                   Open to internships, entry-level opportunities, and project collaborations. 

@@ -108,10 +108,24 @@ const Hero = () => {
             and building scalable real-time systems.
           </motion.p>
 
+          {/* Profile Image */}
+          <motion.div variants={itemVariants} className="mb-8">
+            <div className="relative mx-auto w-32 h-32 md:w-40 md:h-40">
+              <div className="absolute inset-0 bg-gradient-primary rounded-full transform rotate-6"></div>
+              <div className="relative bg-white rounded-full overflow-hidden transform -rotate-6 hover:rotate-0 transition-transform duration-300">
+                <img
+                  src="/lovable-uploads/f9093db6-53ed-4cc3-907c-e5aa214db6a8.png"
+                  alt="Sai Vamsi Cheekati"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </motion.div>
+
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
+            className="flex justify-center pt-8"
           >
             <Button
               size="lg"
@@ -120,15 +134,6 @@ const Hero = () => {
             >
               <span className="mr-2">Explore My Work</span>
               <ArrowDown className="w-4 h-4" />
-            </Button>
-            
-            <Button
-              size="lg"
-              variant="outline"
-              className="px-8 py-3 hover:bg-muted"
-            >
-              <Download className="w-4 h-4 mr-2" />
-              Download CV
             </Button>
           </motion.div>
 

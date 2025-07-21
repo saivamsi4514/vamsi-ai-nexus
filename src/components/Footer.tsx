@@ -122,9 +122,9 @@ const Footer = () => {
             >
               <h3 className="font-semibold mb-4">Get In Touch</h3>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>San Francisco, CA</p>
-                <p>sai.vamsi.cheekati@gmail.com</p>
-                <p>+1 (555) 123-4567</p>
+                <p>Vizianagaram, India</p>
+                <p>saivamsicheekati@gmail.com</p>
+                <p>+91 7093798378</p>
               </div>
               <div className="mt-4">
                 <p className="text-sm text-muted-foreground mb-2">Currently Available</p>

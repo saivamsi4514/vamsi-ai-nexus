@@ -89,21 +89,6 @@ const Blog = () => {
       views: 789,
       likes: 56
     },
-    {
-      id: 6,
-      title: "Microservices Architecture with GraphQL Federation",
-      excerpt: "Designing and implementing microservices architectures using GraphQL Federation for improved developer experience.",
-      content: "GraphQL Federation allows you to compose multiple GraphQL services...",
-      featuredImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop",
-      author: "Sai Vamsi Cheekati",
-      publishDate: "2023-12-15",
-      readTime: "13 min read",
-      tags: ["GraphQL", "Microservices", "Backend", "API Design"],
-      category: "Backend",
-      featured: false,
-      views: 923,
-      likes: 62
-    }
   ]
 
   const allTags = ['All', ...Array.from(new Set(blogPosts.flatMap(post => post.tags)))]

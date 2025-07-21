@@ -111,8 +111,8 @@ const Hero = () => {
           {/* Profile Image */}
           <motion.div variants={itemVariants} className="mb-8">
             <div className="relative mx-auto w-32 h-32 md:w-40 md:h-40">
-              <div className="absolute inset-0 bg-gradient-primary rounded-full transform rotate-6"></div>
-              <div className="relative bg-white rounded-full overflow-hidden transform -rotate-6 hover:rotate-0 transition-transform duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/30 rounded-full"></div>
+              <div className="relative bg-white rounded-full overflow-hidden border-4 border-white shadow-lg">
                 <img
                   src="/lovable-uploads/f9093db6-53ed-4cc3-907c-e5aa214db6a8.png"
                   alt="Sai Vamsi Cheekati"

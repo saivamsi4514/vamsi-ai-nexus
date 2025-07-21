@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { GraduationCap, Award, Calendar, MapPin } from 'lucide-react'
+import { GraduationCap, Calendar, MapPin } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 
 const Education = () => {
@@ -82,32 +82,6 @@ const Education = () => {
     }
   ]
 
-  const certifications = [
-    {
-      name: "AWS Certified Solutions Architect - Professional",
-      issuer: "Amazon Web Services",
-      date: "2023-08",
-      credentialId: "AWS-PSA-123456"
-    },
-    {
-      name: "Google Cloud Professional ML Engineer",
-      issuer: "Google Cloud",
-      date: "2023-06",
-      credentialId: "GCP-MLE-789012"
-    },
-    {
-      name: "Certified Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2023-04",
-      credentialId: "CKA-345678"
-    },
-    {
-      name: "Certified Ethical Hacker (CEH)",
-      issuer: "EC-Council",
-      date: "2022-11",
-      credentialId: "CEH-901234"
-    }
-  ]
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -143,11 +117,11 @@ const Education = () => {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Education & <span className="hero-gradient-text">Qualifications</span>
+              Education & <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Qualifications</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Academic foundation and professional certifications that have shaped my expertise 
-              in computer science, AI/ML, and cybersecurity.
+              Academic foundation that has shaped my expertise in computer science, 
+              artificial intelligence, and data science.
             </p>
           </motion.div>
 
@@ -163,15 +137,14 @@ const Education = () => {
                 <motion.div
                   key={edu.id}
                   variants={itemVariants}
-                  whileHover={{ scale: 1.01 }}
-                  className="card-elegant p-8 rounded-xl"
+                  className="bg-card border border-border p-8 rounded-xl hover:shadow-md transition-all duration-300"
                 >
                   <div className="grid lg:grid-cols-3 gap-6">
                     {/* Main Info */}
                     <div className="lg:col-span-2">
                       <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                         <div>
-                          <h4 className="text-xl font-bold text-primary mb-2">{edu.degree}</h4>
+                          <h4 className="text-xl font-bold text-blue-700 dark:text-blue-400 mb-2">{edu.degree}</h4>
                           <p className="text-lg text-muted-foreground font-medium mb-2">
                             {edu.specialization}
                           </p>
@@ -189,7 +162,7 @@ const Education = () => {
                             </div>
                           </div>
                         </div>
-                        <Badge variant="outline" className="mt-2 md:mt-0 w-fit">
+                        <Badge variant="outline" className="mt-2 md:mt-0 w-fit border-blue-200 text-blue-700 dark:border-blue-800 dark:text-blue-400">
                           GPA: {edu.gpa}
                         </Badge>
                       </div>
@@ -224,42 +197,6 @@ const Education = () => {
                         ))}
                       </div>
                     </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Certifications */}
-          <motion.div variants={itemVariants}>
-            <h3 className="text-2xl font-bold mb-8 text-center flex items-center justify-center">
-              <Award className="w-6 h-6 mr-2" />
-              Professional Certifications
-            </h3>
-            
-            <div className="grid md:grid-cols-2 gap-6">
-              {certifications.map((cert) => (
-                <motion.div
-                  key={cert.name}
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02 }}
-                  className="card-elegant p-6 rounded-xl"
-                >
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex-1">
-                      <h4 className="font-bold text-primary mb-2">{cert.name}</h4>
-                      <p className="text-muted-foreground mb-2">{cert.issuer}</p>
-                      <div className="flex items-center text-sm text-muted-foreground">
-                        <Calendar className="w-4 h-4 mr-1" />
-                        {formatDate(cert.date)}
-                      </div>
-                    </div>
-                    <Award className="w-8 h-8 text-primary flex-shrink-0" />
-                  </div>
-                  <div className="pt-4 border-t border-border">
-                    <p className="text-xs text-muted-foreground">
-                      Credential ID: {cert.credentialId}
-                    </p>
                   </div>
                 </motion.div>
               ))}

@@ -248,11 +248,13 @@ const Projects = () => {
                     </div>
                     
                     <div className="flex items-center space-x-2">
-                      <Button size="sm" variant="ghost" asChild>
-                        <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                          <Github className="w-4 h-4" />
-                        </a>
-                      </Button>
+                      {project.html_url && (
+                        <Button size="sm" variant="ghost" asChild>
+                          <a href={project.html_url} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      )}
                       {project.homepage && (
                         <Button size="sm" variant="ghost" asChild>
                           <a href={project.homepage} target="_blank" rel="noopener noreferrer">

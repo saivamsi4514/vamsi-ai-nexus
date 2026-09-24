@@ -21,7 +21,7 @@ const Projects = () => {
       forks: 0,
       language: "Python",
       updated_at: "2026-09-24",
-      html_url: "https://github.com/saivamsi4514/xi-ipl-prediction",
+      html_url: null,
       homepage: "https://xi-ipl-predictor.netlify.app/",
       featured: true,
       date: "2026",

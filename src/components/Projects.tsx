@@ -13,6 +13,21 @@ const Projects = () => {
   // Full-Stack Projects
   const fullStackProjects = [
     {
+      id: 8,
+      name: "IPL Predictor",
+      description: "Full-stack AI analytics SaaS platform for IPL cricket. A React + Tailwind + Recharts frontend talks to a FastAPI backend with SQLAlchemy and PostgreSQL, while a Pandas, Scikit-learn and XGBoost pipeline trains and compares models on historical IPL data. Includes JWT/API-key authentication, Stripe subscriptions, Monte Carlo season simulations, Celery + Redis background jobs, real-time WebSocket predictions and automated AI-generated match content.",
+      technologies: ["React", "TailwindCSS", "Recharts", "FastAPI", "SQLAlchemy", "PostgreSQL", "Scikit-learn", "XGBoost", "Celery", "Redis", "Stripe"],
+      stars: 0,
+      forks: 0,
+      language: "Python",
+      updated_at: "2026-09-24",
+      html_url: "https://github.com/saivamsi4514/xi-ipl-prediction",
+      homepage: "https://xi-ipl-predictor.netlify.app/",
+      featured: true,
+      date: "2026",
+      role: "Full-Stack Developer"
+    },
+    {
       id: 1,
       name: "Student Management System",
       description: "Comprehensive student management platform with user authentication, grade tracking, course management, and administrative dashboard. Built with modern full-stack technologies for seamless user experience.",
